@@ -1,0 +1,24 @@
+{
+  "name": "prismadb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorgealexis07/prismadb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jorgealexis07/prismadb/issues"
+  },
+  "homepage": "https://github.com/jorgealexis07/prismadb#readme",
+  "devDependencies": {
+    "express": "^4.18.1",
+    "jest": "^28.1.0",
+    "prisma": "^3.14.0"
+  }
+}
