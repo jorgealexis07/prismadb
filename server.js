@@ -41,6 +41,8 @@ app.post('/explorers', async (req, res) => {
 			id: id
 		},
 		data: {
+            name: req.body.name,
+            username: req.body.username,
 			mission: req.body.mission
 		}
 	})
