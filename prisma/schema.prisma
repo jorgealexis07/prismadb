@@ -25,6 +25,6 @@ model Alumno {
   name String @unique
   lang String @unique
   missionCommander String @db.VarChar(255)
-  enrrollments Int @id 
+  enrrollments Int @unique
   hasCertification Boolean @default(false)
 }
