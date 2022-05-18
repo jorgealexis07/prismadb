@@ -80,7 +80,7 @@ const prisma = new PrismaClient();
       const alumno2 = await prisma.alumno.upsert({
         where: { name: 'Alumno2' },
         update: {},
-        create: {
+        create: { 
           name: 'Alumno2',
           lang: 'frances',
           missionCommander: 'Rodrigo',
