@@ -76,7 +76,7 @@ app.post('/alumno', async (req, res) => {
       enrrollments: req.body.enrrollments
      };
     const message = 'Alumno creado.';
-    await prisma.explorer.create({data: alumno});
+    await prisma.alumno.create({data: alumno});
     return res.json({message});
   });
 
