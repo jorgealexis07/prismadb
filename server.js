@@ -2,10 +2,16 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 const port = process.env.PORT || 3000;
-
 // Require para usar Prisma
 const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
+
+//Cors
+const cors = require("cors");
+
+const corsOptions = { origin: "http://localhost:8081" };
+
+app.use(cors(corsOptions));
 
 app.get('/', (req, res) => {
   res.json({message: 'alive'});
@@ -100,6 +106,8 @@ app.delete('/alumnos/:id', async (req, res) => {
 	await prisma.explorer.delete({where: {id: id}});
 	return res.json({message: "Eliminado correctamente"});
 });
+
+
 
 
 
